@@ -25,10 +25,34 @@ DROP TABLE IF EXISTS `Schedule`;
 CREATE TABLE `Schedule` (
   `GUID` varchar(50) NOT NULL,
   `Schedule_ID` varchar(50) NOT NULL,
-  `Mon_Morning` tinyint(2) DEFAULT NULL COMMENT 'Available or not\n',
-  `Mon_Noon` tinyint(2) DEFAULT NULL,
-  `Mon_Afternoon` tinyint(2) DEFAULT NULL,
-  `Mon_Evening` tinyint(2) DEFAULT NULL,
+  `Mon_Morning` tinyint(2) NOT NULL COMMENT 'Available or not\n',
+  `Mon_Noon` tinyint(2) NOT NULL,
+  `Mon_Afternoon` tinyint(2) NOT NULL,
+  `Mon_Evening` tinyint(2) NOT NULL,
+  `Tue_Morning` tinyint(2) NOT NULL,
+  `Tue_Noon` tinyint(2) NOT NULL,
+  `Tue_Afternoon` tinyint(2) NOT NULL,
+  `Tue_Evening` tinyint(2) NOT NULL,
+  `Wed_Morning` tinyint(2) NOT NULL,
+  `Wed_Noon` tinyint(2) NOT NULL,
+  `Wed_Afternoon` tinyint(2) NOT NULL,
+  `Wed_Evening` tinyint(2) NOT NULL,
+  `Thu_Morning` tinyint(2) NOT NULL,
+  `Thu_Noon` tinyint(2) NOT NULL,
+  `Thu_Afternoon` tinyint(2) NOT NULL,
+  `Thu_Evening` tinyint(2) NOT NULL,
+  `Fri_Morning` tinyint(2) NOT NULL,
+  `Fri_Noon` tinyint(2) NOT NULL,
+  `Fri_Afternoon` tinyint(2) NOT NULL,
+  `Fri_Evening` tinyint(2) NOT NULL,
+  `Sat_Morning` tinyint(2) NOT NULL,
+  `Sat_Noon` tinyint(2) NOT NULL,
+  `Sat_Afternoon` tinyint(2) NOT NULL,
+  `Sat_Evening` tinyint(2) NOT NULL,
+  `Sun_Morning` tinyint(2) NOT NULL,
+  `Sun_Noon` tinyint(2) NOT NULL,
+  `Sun_Afternoon` tinyint(2) NOT NULL,
+  `Sun_Evening` tinyint(2) NOT NULL,
   PRIMARY KEY (`GUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -51,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-14 11:06:52
+-- Dump completed on 2016-01-14 20:46:39
